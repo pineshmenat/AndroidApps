@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pinesh.sharedpreferencesapp.MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your message"
+        />
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_marginTop="20px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="25sp"
+        android:text="ABCD"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adjust Font size"/>
+
+    <SeekBar
+        android:layout_marginTop="20dp"
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Font Color"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <RadioButton
+            android:id="@+id/red"
+            android:text="Red"
+            android:onClick="changeColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+        <RadioButton
+            android:id="@+id/green"
+            android:text="Green"
+            android:onClick="changeColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+        <RadioButton
+            android:id="@+id/blue"
+            android:text="Blue"
+            android:onClick="changeColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="saveSetting"
+        android:text="Save Settings"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clearSetting"
+        android:text="Clear Settings"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+</LinearLayout>
